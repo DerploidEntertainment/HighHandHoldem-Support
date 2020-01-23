@@ -1,3 +1,5 @@
+![High Hand Hold'em logo](https://github.com/DerploidEntertainment/HighHandHoldem/blob/master/HighHandHoldem/Assets/HighHandHoldem/app-icons/default-icon-256.png)
+
 # :hearts: :clubs: _High Hand Hold'em_ Support :diamonds: :spades:
 
 Welcome! Please select the `Issues` tab above to report a bug, suggest a feature, or ask a general question about our mobile game, _High Hand Hold'em_. Additionally, you can like and comment on existing issues to help us prioritize bugs/features for future updates.
