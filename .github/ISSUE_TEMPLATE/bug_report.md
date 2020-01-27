@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: Create a report to improve the game
-title: ''
+title: 'Error occurs during <action>'
 labels: bug
 assignees: ''
 
