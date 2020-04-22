@@ -8,18 +8,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- This CHANGELOG file to help our wonderful player see what new features and bug fixes are included in each new version
+- This CHANGELOG file to summarize what new features and bug fixes are included in each new version
 - Separate sections for Feedback & Issues, Changelog, and Legal Stuff in Support repo README
+- Button on About screen that links to this Changelog
 - Vibrations for correct/wrong choices, starting a game, timeout, etc. using More Mountains' Nice Vibrations asset
 - Vibrations can be toggled on/off from Options menu (unless the device doesnt support haptics), and the choice will be persisted between sessions
 - Custom icons on UI buttons
 - Back button on Android devices can be used to navigate menus
 - Buttons on About screen that link to support repo, for creating bug reports or requesting new features
-- 3-2-1 countdown when starting a new game
+- 3-2-1 countdown when starting a new game or continuing after a rewarded ad
 - Hand/board cards now "fly in" when a new game starts
 - "Confirm quit" buttons to the pause screen, navigable with Android back button
 - A loading screen, so there's something to look at while first (and only) scene is being loaded by Unity
-- Dialog for accepting legal documents on game start (privacy policy and terms/conditions, not yet written)
+- Dialog for accepting legal documents on first game start or after documents are updated (privacy policy and terms/conditions not yet written)
 - Acceptance of legal documents is persisted between sessions
 - Shine effect to cards immediately after deal
 - Button to open options screen from pause menu
