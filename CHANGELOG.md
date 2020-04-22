@@ -1,5 +1,5 @@
 # Changelog
-All notable changes to this project will be documented in this file.
+All notable changes to _High Hand Hold'em_ will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - This CHANGELOG file to help our wonderful player see what new features and bug fixes are included in each new version
-- Support repo README now contains separate sections for Feedback & Issues, Changelog, and Legal Stuff
+- Separate sections for Feedback & Issues, Changelog, and Legal Stuff in Support repo README
 - Vibrations for correct/wrong choices, starting a game, timeout, etc. using More Mountains' Nice Vibrations asset
 - Vibrations can be toggled on/off from Options menu (unless the device doesnt support haptics), and the choice will be persisted between sessions
 - Custom icons on UI buttons
@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Buttons on About screen that link to support repo, for creating bug reports or requesting new features
 - 3-2-1 countdown when starting a new game
 - Hand/board cards now "fly in" when a new game starts
-- Add "confirm quit" buttons to the pause screen, navigable with Android back button
+- "Confirm quit" buttons to the pause screen, navigable with Android back button
 - A loading screen, so there's something to look at while first (and only) scene is being loaded by Unity
 - Dialog for accepting legal documents on game start (privacy policy and terms/conditions, not yet written)
 - Acceptance of legal documents is persisted between sessions
@@ -54,7 +54,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - High score tiles not displaying correct local date
 - Hands still being clickable on timeout
 - Cards not being dealt with tiered difficulty (number of board/hand cards)
-- Pressing UI controls on scrollable screens finally works
+- UI controls on scrollable screens being hard to press
 
 ## 0.2.0 - 2020-01-15
 
