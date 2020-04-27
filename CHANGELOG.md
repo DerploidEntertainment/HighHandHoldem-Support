@@ -25,6 +25,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Shine effect to cards immediately after deal
 - Button to open options screen from pause menu
 - Ability to continue for free by watching a rewarded ad (only if 3 rounds since last continue or start of game)
+- Now tracking longest games, in addition to high scores
+- Gameover screen now shows "badges" for high score and longest game, if they were achieved during the game that just ended 
 
 ### Changed
 - Now running with Unity 2019.3.0f6
@@ -46,6 +48,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Release builds now include additional optimizations like engine code bytecode stripping, IL2CPP Release configuration, and higher compression
 - Interstitial ads will now show when quitting to main menu (from pause or gameover screens) after every 3rd gameover
 - Now using incremental garbage collector
+- High Score screen is now the Statistics screen, and allows stats to be sorted by score, rounds lasted, or date
+- UI effects for new high scores now appear/disappear, rather than staying at the top of the screen for the rest of the game
 
 ### Removed
 - Commit SHA on About screen, since its meaningless to players, and devs can figure out from Cloud Build
