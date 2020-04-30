@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - This CHANGELOG file to summarize what new features and bug fixes are included in each new version
 - Separate sections for Feedback & Issues, Changelog, and Legal Stuff in Support repo README
-- Button on About screen that links to this Changelog
+- Button on About screen that links to this Changelog (labeled "Release Notes", cause thats a more familiar term)
 - Vibrations for correct/wrong choices, starting a game, timeout, etc. using More Mountains' Nice Vibrations asset
 - Vibrations can be toggled on/off from Options menu (unless the device doesnt support haptics), and the choice will be persisted between sessions
 - Custom icons on UI buttons
@@ -26,7 +26,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Button to open options screen from pause menu
 - Ability to continue for free by watching a rewarded ad (only if 3 rounds since last continue or start of game)
 - Now tracking longest games, in addition to high scores
-- Gameover screen now shows "badges" for high score and longest game, if they were achieved during the game that just ended 
+- Gameover screen now shows "badges" for high score and longest game, if they were achieved during the game that just ended
+- "Powered By" section on About screen that shows important technologies/assets powering the game, with links to their websites
 
 ### Changed
 - Now running with Unity 2019.3.0f6
@@ -48,11 +49,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Release builds now include additional optimizations like engine code bytecode stripping, IL2CPP Release configuration, and higher compression
 - Interstitial ads will now show when quitting to main menu (from pause or gameover screens) after every 3rd gameover
 - Now using incremental garbage collector
-- High Score screen is now the Statistics screen, and allows stats to be sorted by score, rounds lasted, or date
+- High Score screen is now the Stats screen, and allows stats to be sorted by score, rounds lasted, or date
 - UI effects for new high scores now appear/disappear, rather than staying at the top of the screen for the rest of the game
+- When resuming a game after soft closing on iOS/Android, game will be paused
+- Banner ads now show on Options, Stats, and About screens as well
+- Options menu has been reorganized, with audio sliders larger and their handles Poker chips instead of gems
+- Build number is now 4th value of the version number
 
 ### Removed
 - Commit SHA on About screen, since its meaningless to players, and devs can figure out from Cloud Build
+- Scroll bars on all screens that scroll
 
 ### Fixed
 - High score tiles not being wide enough
