@@ -29,7 +29,7 @@ If applicable, add screenshots to help explain your problem.
 **Device (please complete the following information):**
  - Model: [e.g., iPhone6]
  - OS: [e.g., iOS8.1]
- - Game version [e.g., 1.1.0 (Build 23)] (found on Options screen)
+ - Game version: [e.g., 1.1.0 (Build 23)] (found on About screen)
 
 **Additional context**
 Add any other context about the problem here.
