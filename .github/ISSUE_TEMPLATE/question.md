@@ -1,6 +1,6 @@
 ---
 name: Question
-about: Ask a question about this game
+about: Ask a question about the game
 title: 'Question about <topic>'
 labels: question
 assignees: ''
