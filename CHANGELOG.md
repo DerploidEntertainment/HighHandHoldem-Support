@@ -4,7 +4,7 @@ All notable changes to _High Hand Hold'em_ will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## 0.3.0 - TBD
 
 ### Added
 
@@ -28,6 +28,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Now tracking longest games, in addition to high scores
 - Gameover screen now shows "badges" for high score and longest game, if they were achieved during the game that just ended
 - "Powered By" section on About screen that shows important technologies/assets powering the game, with links to their websites
+- Now tracking multiple "stats" in addition to high score: number of games, average rounds lasted, max rounds lasted, average round time for rounds with different numbers of hands, and number of correct choices for each poker rank
+- The stats number of games, high score, average rounds lasted, and max rounds lasted also have "no continue" variants, which include only stats from games where a rewarded ad was not used to continue
+- All of the new stats can be filtered by "today", "this week", or "all time"
+- Rebalanced colors using the Blend Modes asset
 
 ### Changed
 - Now running with Unity 2019.3.0f6
@@ -41,15 +45,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Background frame, with new divider bar under board cards, only when playing
 - Circular UI buttons now have spinning circular text around them
 - Hold'em sign letters
-- Handles of audio sliders on options screen are now shaped like gems
-- Scorebox displays the name of the correct Poker rank
+- Handles of audio sliders on options screen are now shaped like Poker chips
 - Main menu shows "Main Menu" in scorebox
 - Added UI "breakpoints" to update size/position of UI elements on devices with different aspect ratios
 - The circle around the hold'em letters no longer bounces
 - Release builds now include additional optimizations like engine code bytecode stripping, IL2CPP Release configuration, and higher compression
 - Interstitial ads will now show when quitting to main menu (from pause or gameover screens) after every 3rd gameover
 - Now using incremental garbage collector
-- High Score screen is now the Stats screen, and allows stats to be sorted by score, rounds lasted, or date
+- High Score screen is now the Statistics screen, with many additional stats besides high score being tracked (see Added section above)
 - UI effects for new high scores now appear/disappear, rather than staying at the top of the screen for the rest of the game
 - When resuming a game after soft closing on iOS/Android, game will be paused
 - Banner ads now show on Options, Stats, and About screens as well
