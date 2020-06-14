@@ -31,7 +31,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Now tracking multiple "stats" in addition to high score: number of games, average rounds lasted, max rounds lasted, average round time for rounds with different numbers of hands, and number of correct choices for each poker rank
 - The stats number of games, high score, average rounds lasted, and max rounds lasted also have "no continue" variants, which include only stats from games where a rewarded ad was not used to continue
 - All of the new stats can be filtered by "today", "this week", or "all time"
-- Rebalanced colors using the Blend Modes asset
 
 ### Changed
 - Now running with Unity 2019.3.0f6
@@ -58,9 +57,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Banner ads now show on Options, Stats, and About screens as well
 - Options menu has been reorganized, with audio sliders larger and their handles Poker chips instead of gems
 - Build number is now 4th value of the version number
+- Rebalanced colors using the Blend Modes asset
+- Menu bottons now show text _next to_ the Poker chip image, rather than as circular text
+- Paused screen shows "Paused" in the scorebox
 
 ### Removed
-- Commit SHA on About screen, since its meaningless to players, and devs can figure out from Cloud Build
+- Commit SHA on About screen, since its meaningless to players, and devs can figure out from CI/CD system
 - Scroll bars on all screens that scroll
 
 ### Fixed
