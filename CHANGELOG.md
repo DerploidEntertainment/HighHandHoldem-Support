@@ -33,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - All of the new stats can be filtered by "today", "this week", or "all time"
 
 ### Changed
-- Now running with Unity 2019.3.0f6
+- Now running with Unity 2019.4.0f1
 - Pause menu adds a low-pass filter to the background music
 - Correct-choice animations feel a bit more "snappy"
 - Cards no longer have that goofy "pencily" shader effect
