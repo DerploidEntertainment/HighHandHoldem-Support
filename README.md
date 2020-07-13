@@ -1,4 +1,4 @@
-![High Hand Hold'em logo](https://github.com/DerploidEntertainment/HighHandHoldem/blob/master/HighHandHoldem/Assets/HighHandHoldem/app-icons/default-icon-256.png)
+![High Hand Hold'em logo](./images/hhh-icon-256.tiff)
 
 [![Keep a Changelog v0.2.0 badge][changelog-badge]][changelog] [![Version 0.2.0 Badge][version-badge]][changelog] [![MIT License Badge][license-badge]][license]
 
