@@ -32,14 +32,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The stats number of games, high score, average rounds lasted, and max rounds lasted also have "no continue" variants, which include only stats from games where a rewarded ad was not used to continue
 - All of the new stats can be filtered by "today", "this week", or "all time"
 - Hand Ranks screen, where players can get an overview of the different Poker ranks
-- New Nathaniel-19 font for select UI elements
 
 ### Changed
 - Now running with Unity 2019.4.0f1
 - Pause menu adds a low-pass filter to the background music
 - Correct-choice animations feel a bit more "snappy"
 - Cards no longer have that goofy "pencily" shader effect
-- All UI now uses the KenVector Bold font
+- All UI now uses the KenVector Bold or Nathaniel-19 fonts
 - Derploid logo on splash screen
 - "Pop" effects on correct cards: cards for all ranks now pop in descending optimal order and do not translate
 - Non-chosen cards are now dimmed, rather than making the chosen cards yellow
