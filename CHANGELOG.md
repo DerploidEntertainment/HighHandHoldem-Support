@@ -31,6 +31,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Now tracking multiple "stats" in addition to high score: number of games, average rounds lasted, max rounds lasted, average round time for rounds with different numbers of hands, and number of correct choices for each poker rank
 - The stats number of games, high score, average rounds lasted, and max rounds lasted also have "no continue" variants, which include only stats from games where a rewarded ad was not used to continue
 - All of the new stats can be filtered by "today", "this week", or "all time"
+- Hand Ranks screen, where players can get an overview of the different Poker ranks
+- New Nathaniel-19 font for select UI elements
 
 ### Changed
 - Now running with Unity 2019.4.0f1
@@ -54,16 +56,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - High Score screen is now the Statistics screen, with many additional stats besides high score being tracked (see Added section above)
 - UI effects for new high scores now appear/disappear, rather than staying at the top of the screen for the rest of the game
 - When resuming a game after soft closing on iOS/Android, game will be paused
-- Banner ads now show on Options, Stats, and About screens as well
+- Banner ads now show on Options, Stats, About, Hand Ranks, and Pause screens as well
 - Options menu has been reorganized, with audio sliders larger and their handles Poker chips instead of gems
 - Build number is now 4th value of the version number
 - Rebalanced colors using the Blend Modes asset
 - Menu bottons now show text _next to_ the Poker chip image, rather than as circular text
 - Paused screen shows "Paused" in the scorebox
+- Timer lights have a little flash animation as they tick down. When there are 5 seconds left, they flash red, and then they pulse on a loop after a timeout.
+- Updated app icon, and provided round/adaptive icons for Android devices that support them
+- The scroll bars on all scrollable screens
+- The hand indicator lights, which are once again little bouncing chevrons
 
 ### Removed
 - Commit SHA on About screen, since its meaningless to players, and devs can figure out from CI/CD system
-- Scroll bars on all screens that scroll
+- That bouncy shadow under the circle light behind the "Hold'em" letters
 
 ### Fixed
 - High score tiles not being wide enough
@@ -71,6 +77,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Hands still being clickable on timeout
 - Cards not being dealt with tiered difficulty (number of board/hand cards)
 - UI controls on scrollable screens being hard to press
+- Sharp corners in the board area and game area
 
 ## 0.2.0 - 2020-01-15
 
