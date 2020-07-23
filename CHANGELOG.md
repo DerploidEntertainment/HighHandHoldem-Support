@@ -75,6 +75,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The scroll bars on all scrollable screens
 - The hand indicator lights, which are once again little bouncing chevrons
 - Button backgrounds to better match the color theme
+- The patterned background to a "checkerboard" rather than "zig zags"
 
 ### Removed
 - Commit SHA from About screen, since it was meaningless to players, and devs can figure out from CI/CD system
@@ -86,6 +87,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cards not being dealt with tiered difficulty (with respect to number of board/hand cards)
 - UI controls on scrollable screens being hard to press
 - Sharp corners in the board area and game area
+- Broken tiling of the patterned background, and made it fit the color scheme better
 
 
 ## 0.2.0 - 2020-01-15
