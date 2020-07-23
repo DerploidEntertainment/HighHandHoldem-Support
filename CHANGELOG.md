@@ -49,7 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Now running with Unity 2019.4.3f1
 - Pause menu adds a low-pass filter to the background music
 - Correct-choice animations feel a bit more "snappy"
-- All UI now uses the KenVector Bold or Nathaniel-19 fonts
+- All UI now uses the Nathaniel-19 font
 - Derploid logo on splash screen
 - "Pop" effects on correct cards: cards for all ranks now pop in descending optimal order and do not translate
 - Non-chosen cards are now dimmed, rather than making the chosen cards yellow
