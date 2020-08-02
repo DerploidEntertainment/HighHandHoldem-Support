@@ -8,9 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- A sound for when UI elements are tapped
+
 ### Changed
 
+- Banner ad now shows on Pause menu
+- Font size on "rectangle buttons" to be larger
+- Stats menu shows different text when no games have been played within the different timespans
+
 ### Removed
+
+- Unnecessary analytics events for visiting the Main Menu
 
 ### Fixed
 
