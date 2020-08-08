@@ -4,24 +4,6 @@ All notable changes to _High Hand Hold'em_ will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 0.4.0 - TBD
-
-### Added
-
-- A sound for when UI elements are tapped
-
-### Changed
-
-- Banner ad now shows on Pause menu
-- Font size on "rectangle buttons" to be larger
-- Stats menu shows different text when no games have been played within the different timespans
-
-### Removed
-
-- Unnecessary analytics events for visiting the Main Menu
-
-### Fixed
-
 
 ## 0.3.0 - 2020-07-23
 
