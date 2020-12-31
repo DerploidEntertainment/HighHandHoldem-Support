@@ -1,10 +1,10 @@
 ![High Hand Hold'em logo](./images/hhh-icon-256.tiff)
 
-[![Keep a Changelog v0.2.0 badge][changelog-badge]][changelog] [![Version 0.2.0 Badge][version-badge]][changelog] [![MIT License Badge][license-badge]][license]
+[![Keep a Changelog v0.3.0 badge][changelog-badge]][changelog] [![Version 0.3.0 Badge][version-badge]][changelog] [![MIT License Badge][license-badge]][license]
 
 # :hearts: :clubs: _High Hand Hold'em_ Support :diamonds: :spades:
 
-_&copy; 2017 Derploid Entertainment, LLC._
+_&copy; 2017-2021 Derploid Entertainment, LLC._
 
 Welcome! This repository contains supporting resources for our mobile card game, _High Hand Hold'em_. See sections below for more info.
 
@@ -26,7 +26,7 @@ All notable changes to _High Hand Hold'em_ are documented in [CHANGELOG.md](./CH
 Your use of _High Hand Hold'em_ is licensed under the following [terms and conditions](https://hhh-legal-docs.s3.us-east-2.amazonaws.com/hhh-terms.html), which actually make for a pretty good read. All files in this repository are licensed under the super-permissive [MIT license](./LICENSE).
 
 [changelog]: ./CHANGELOG.md
-[changelog-badge]: https://img.shields.io/badge/changelog-v0.2.0-blue.svg
+[changelog-badge]: https://img.shields.io/badge/changelog-v0.3.0-blue.svg
 [license]: ./LICENSE
-[version-badge]: https://img.shields.io/badge/version-0.2.0-blue.svg
+[version-badge]: https://img.shields.io/badge/version-0.3.0-blue.svg
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
