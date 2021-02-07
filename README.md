@@ -1,4 +1,4 @@
-![High Hand Hold'em logo](./images/hhh-icon-256.tiff)
+![High Hand Hold'em logo](./images/HHH256.png)
 
 [![Keep a Changelog v0.3.0 badge][changelog-badge]][changelog] [![Version 0.3.0 Badge][version-badge]][changelog] [![MIT License Badge][license-badge]][license]
 
