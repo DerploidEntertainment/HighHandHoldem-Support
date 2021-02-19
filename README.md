@@ -26,7 +26,7 @@ All notable changes to _High Hand Hold'em_ are documented in [CHANGELOG.md](./CH
 Your use of _High Hand Hold'em_ is licensed under the following [terms and conditions](https://hhh-legal-docs.s3.us-east-2.amazonaws.com/hhh-terms.html), which actually make for a pretty good read. All files in this repository are licensed under the super-permissive [MIT license](./LICENSE).
 
 [changelog]: ./CHANGELOG.md
-[changelog-badge]: https://img.shields.io/badge/changelog-v0.3.0-blue.svg
+[changelog-badge]: https://img.shields.io/badge/changelog-v0.4.0-blue.svg
 [license]: ./LICENSE
-[version-badge]: https://img.shields.io/badge/version-0.3.0-blue.svg
+[version-badge]: https://img.shields.io/badge/version-0.4.0-blue.svg
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
