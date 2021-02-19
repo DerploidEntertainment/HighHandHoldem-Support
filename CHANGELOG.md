@@ -5,6 +5,49 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## 0.4.0 - 2021-02-18
+
+### Added
+
+- A basic, placeholder tutorial for introducing the Poker ranks and rules specific to High Hand Hold'em. The tutorial will not show again after its been completed, unless player toggles it back on for the next game from the Options menu
+- Appodeal 2.11.2 for ad mediation
+- Runtime configuration via Unity Remote Config
+- A sound for when UI elements are tapped
+- New "announcer callouts" for starting a game
+- New "announcer callouts" for continuing a game
+- New "announcer callouts" for timeout and gameover
+- New "announcer callout" for longest game
+- iOS launch screen image
+
+### Changed
+
+- Now running with Unity 2020.1.8f1
+- Banner ad now shows on Pause menu
+- Font size on "rectangle buttons" is larger
+- Image for the button to continue after a wrong choice or timeout
+- Minimum target iOS version to 12.4, and minimum Android version to 5.0 "Lollipop", to simplify maintenance of all the new Android/iOS plugins added by Appodeal
+- The overall art style has been updated.
+- Border light animation to a single pulse of all lights
+- Unselected cards no longer "un-dim" before flipping over after a correct choice
+- Scene loading time is now ~37% faster on iOS (unchanged on Android), with ~35% less heap memory allocated on Android and ~63% less on iOS!
+- First time loading the game screen in a session is now ~25% faster on Android and ~21% faster on iOS, with ~64% less heap memory allocated on Android and ~60% less on iOS!
+- Changed "announcer callouts" for hand ranks.
+- Changed "announcer callout" for new high score.
+- Game will now fit to the "safe area" of the screen on notched devices like iPhone 11
+
+### Removed
+
+- Unnecessary analytics events for visiting the Main Menu
+- "Today" and "This Week" stats, as they didn't really add much value for a single player's stats
+
+### Fixed
+
+- Checkboxes on the Options screen not being tappable after navigating from the Pause menu
+- Procedural dealing is now better documented and configurable for our level designers
+- Back button logging errors from Main Menu or during a game
+- Banner ad staying visible when navigating from side menus to Main Menu or from Pause menu back to game
+
+
 ## 0.3.0 - 2020-07-23
 
 ### Added
