@@ -1,6 +1,6 @@
 ![High Hand Hold'em logo](./images/HHH256.png)
 
-[![Keep a Changelog v0.3.0 badge][changelog-badge]][changelog] [![Version 0.3.0 Badge][version-badge]][changelog] [![MIT License Badge][license-badge]][license]
+[![Keep a Changelog v0.4.0 badge][changelog-badge]][changelog] [![Version 0.4.0 Badge][version-badge]][changelog] [![MIT License Badge][license-badge]][license]
 
 # :hearts: :clubs: _High Hand Hold'em_ Support :diamonds: :spades:
 
