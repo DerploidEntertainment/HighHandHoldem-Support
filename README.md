@@ -13,7 +13,7 @@ Welcome! This repository contains supporting resources for our mobile card game,
 Select the `Issues` tab above to report a bug, suggest a feature, or ask a general question about our mobile game, _High Hand Hold'em_.
 Please take some time to search for existing Issues before you open a new bug report or feature request, to reduce the amount of duplicates in our backlog. You can like and comment on existing issues to show your interest in them, and help us prioritize bugs/features for future updates.
 
-:warning: **Warning:** All issues and comments in this repository are public, so _do not_ provide any personally identifiable information such as your IP address, physical address, device identifier, etc. If a Derploid developer needs this information to help troubleshoot an issue, he or she will ask you to email it to [support@derploid.com](mailto:support@derploid.com). You can also contact that email directly, but you will usually get a response faster if you create an issue.
+:warning: **Warning:** All issues and comments in this repository are public, so _do not_ provide any personally identifiable information such as your IP address, physical address, device identifier, etc. If a Derploid developer needs this information to help troubleshoot an issue, he or she will ask you to email it to [hhh-support@derploid.com](mailto:hhh-support@derploid.com). You can also contact that email directly, but you will usually get a response faster if you create an issue.
 
 Thank you for helping us build a better _High Hand Hold'em_! :pray: :hugs:
 
