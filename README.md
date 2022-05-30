@@ -1,6 +1,10 @@
 ![High Hand Hold'em logo](./images/HHH256.png)
 
-[![Keep a Changelog v0.4.0 badge][changelog-badge]][changelog] [![Version 0.4.0 Badge][version-badge]][changelog] [![MIT License Badge][license-badge]][license]
+[![Keep a Changelog v0.4.0 badge](https://img.shields.io/badge/changelog-v0.4.0-blue.svg)][changelog]
+[![Version 0.4.0 Badge](https://img.shields.io/badge/version-0.4.0-blue.svg)][changelog]
+[![MIT License Badge](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+
+[changelog]: ./CHANGELOG.md
 
 # :hearts: :clubs: _High Hand Hold'em_ Support :diamonds: :spades:
 
