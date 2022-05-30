@@ -8,7 +8,7 @@
 
 # :hearts: :clubs: _High Hand Hold'em_ Support :diamonds: :spades:
 
-_&copy; 2017-2021 Derploid Entertainment, LLC._
+_&copy; 2017-2022 Derploid Entertainment, LLC._
 
 Welcome! This repository contains supporting resources for our mobile card game, _High Hand Hold'em_. See sections below for more info.
 
