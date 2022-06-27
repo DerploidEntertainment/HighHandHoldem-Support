@@ -1,0 +1,76 @@
+name: 🐛 Bug report
+description: File a bug report to improve the game
+title: '<Brief bug description>'
+labels: [ bug ]
+assignees: []
+body:
+  - id: description
+    type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of the bug that occurred.
+
+  - id: repro-steps
+    type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to screen '...'
+        2. Start a match
+        3. Press hand '....'
+        4. See error
+
+  - id: expected-behavior
+    type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you _expected_ to happen.
+
+  - id: actual-behavior
+    type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Actual behavior
+      description: A clear and concise description of what _actually_ happened.
+
+  - id: screenshots
+    type: textarea
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+
+  - id: device-model
+    type: input
+    validations:
+      required: true
+    attributes:
+      label: Device model
+      placeholder: iPhone6
+
+  - id: device-os
+    type: input
+    validations:
+      required: true
+    attributes:
+      label: Device operating system (OS)
+      placeholder: iOS8.1
+
+  - id: game-version
+    type: input
+    attributes:
+      label: Game version
+      description: Version of the game running on your device (found on the About screen).
+      placeholder: 1.1.0 (#23)
+
+  - id: notes
+    type: textarea
+    attributes:
+      label: Additional context
+      description: Any other context about the problem.
