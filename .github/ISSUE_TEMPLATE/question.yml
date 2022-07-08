@@ -1,0 +1,38 @@
+name: 🤔 Question
+description: Ask a question about the game
+title: 'Question about <topic>'
+labels: [ question ]
+assignees: []
+body:
+  - id: is-gameplay
+    type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Is this a question about gameplay?
+      description: A clear and concise question about some specific aspect of gameplay, or "N/A".
+      placeholder: How do I select a hand?
+
+  - id: is-non-gameplay
+    type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Is this a question about a non-gameplay screen?
+      description: A clear and concise question about a non-gameplay screen, or "N/A".
+      placeholder: How do I close the Pause screen?
+
+  - id: question
+    type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Your question
+      description: A clear and concise question, or "N/A" if you already filled out the above fields.
+      placeholder: What are the programmer's favorite pizza toppings?
+
+  - id: notes
+    type: textarea
+    attributes:
+      label: Additional context
+      description: Any other context or screenshots about the question.
