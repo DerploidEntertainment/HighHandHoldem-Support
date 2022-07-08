@@ -1,5 +1,5 @@
-name: Feature request
-description: 💡 Suggest an idea for the game
+name: 💡 Feature request
+description: Suggest an idea for the game
 title: 'Add <feature>'
 labels: [ enhancement ]
 assignees: []
@@ -10,7 +10,7 @@ body:
       required: true
     attributes:
       label: Is your feature request related to a problem?
-      description: A clear and concise description of what the problem is, or "N/A".
+      description: A clear and concise description of what the problem is, or "No".
       placeholder: I'm always frustrated when ...
 
   - id: problem-solution
