@@ -1,7 +1,7 @@
 ![High Hand Hold'em logo](./images/HHH256.png)
 
-[![Keep a Changelog v0.4.0 badge](https://img.shields.io/badge/changelog-v0.4.0-blue.svg)][changelog]
-[![Version 0.4.0 Badge](https://img.shields.io/badge/version-0.4.0-blue.svg)][changelog]
+[![Changelog badge (currently 0.5.0)](https://img.shields.io/badge/changelog-v0.5.0-blue.svg)][changelog]
+[![Version badge (currently 0.5.0)](https://img.shields.io/badge/version-0.5.0-blue.svg)][changelog]
 [![MIT License Badge](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 [changelog]: ./CHANGELOG.md

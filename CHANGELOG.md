@@ -1,9 +1,72 @@
 # Changelog
-All notable changes to _High Hand Hold'em_ will be documented in this file.
+
+All notable changes to _High Hand Hold'em_ are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 0.5.0 - 2023-02-13
+
+### Added
+
+- Set "ITSAppUsesNonExemptEncryption" to false for iOS builds. All of this game's encryption is exempt from US export compliance law
+- Added "NSUserTrackingUsageDescription" permission for iOS builds, to allow advertising identifier usage in iOS 14.5+
+- Support for x86 x86-64 ChromeOS devices (untested though)
+- Sounds for when cards flip and slide on the gameboard
+- Button on Statistics screen for resetting stats
+- New website for Derploid and _High Hand Hold'em_ at www.derploid.com! Hosted on GitHub Pages, with domains registered and DNS configured through AWS Route53.
+- Sign-up form for Derploid mailing list to the new website, powered by Sendinblue.
+- Consent opt-out buttons for ads and analytics, to make the game compliant with GDPR and other privacy regulations
+- Warning about lost progress to confirm-quit text in Pause menu
+- Internal: AWS resources behind the new website are encoded using the Cloud Development Kit (CDK), rather than CloudFormation Templates directly.
+- Internal: .NET Analyzers for better static analysis of code
+- Internal: script to generate thousands of deals with random inputs to test out the new procedural dealing logic
+- Internal: scripts to generate local Android/iOS builds for troubleshooting failed Unity Cloud Builds
+- Internal: Ultimate Editor Enhancer asset to improve Unity workflow
+
+### Changed
+
+- Procedural dealing logic to generate deals of all ranks with equal probability, while maintaining variability.
+  - Deals are generated in the background to keep a consistent frame rate between rounds
+  - A permutation of all Poker ranks is batched ahead of time for choosing the winning rank, with 0-3 "runs" per batch, each 2-3 repeats long.
+    This ensures all ranks win with approximately equal probability, while preventing the same rank from winning too many rounds in a row,
+    or from not appearing for too many rounds in a row, as might happen if we dealt truly randomly.
+- Texture compression settings on all images for Android, achieving ~10% smaller APK download size and ~24% less memory consumption at runtime
+- Texture compression settings on all images for iOS, achieving ~80% smaller IPA download size and install size, and ~94% less memory consumption at runtime
+- Continue button after a wrong choice to have "OK" text, rather than a thumbs-up icon
+- Minimum target iOS version down to 12.2
+- Minimum target Android API Level up to 22 (Android 5.1 "Lollipop")
+- Combined two FTUE (first-time user experience) dialogs into one, with updated wording
+- Poker rank stats to report as % accuracy, not number of correct guesses
+- Poker rank correct effects to always "pop" the cards in increasing order
+- Support repo issue templates now use GitHub Issue Forms for better formatting and input validation
+- Analytics system from Unity's Legacy Analytics to Unity Game Service analytics, for better performance and compliance with privacy laws
+- Board cards and hands to be hidden until they are in play, with an animation as they are added
+- Credits on About screen to more accurately reflect our team roles
+- "Powered By" section of About screen to more accurately reflect our tech dependencies
+- Internal: updated Unity version to 2021.3 LTS (with Gradle 6.1.1)
+- Internal: all code now targets .NET Standard 2.1 after Unity update
+- Internal: Android Gradle Plugin version to 4.0.1
+- Internal: Appodeal SDK version to 2.15.4
+- Internal: our iOS builds are now automatically submitted to App Store Connect from Unity Cloud Build, streamlining our CI/CD pipeline
+- Internal: updated Nice Vibrations asset to the new Lofelt version (v4.1.0)
+- Internal: local Android builds to use a separate app ID so local test builds, debug cloud builds, and prod cloud builds can coexist on the same device.
+- Internal: all internal repo "master" branches to "main", to use more inclusive language
+- Internal: added the OpenUPM and UnityNuGet UPM package registries, allowing us to use NuGet packages in this project and simplify local build configurations
+- Internal: logging is now handled by Serilog
+- Internal: disabled bitcode on iOS, as recommended for Xcode 14+
+- Internal: assembly version of custom assemblies are now always in sync with Unity project version
+
+### Removed
+
+- "Contact Support" button from About screen (making a bug report or feature request on GitHub is recommended instead)
+- iOS launch screen image
+
+### Fixed
+
+- "Loading" text on splash screen to use same font as other UI
+- Low-pass filter not applying to music on the pause menu
+- Value formatting on Statistics screen to always include leading zeroes for decimals, and use integer values for scores and numbers of rounds
 
 ## 0.4.0 - 2021-02-18
 
