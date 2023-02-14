@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.5.0 - 2023-02-13
 
-### Added
+### Added in 0.5.0
 
 - Set "ITSAppUsesNonExemptEncryption" to false for iOS builds. All of this game's encryption is exempt from US export compliance law
 - Added "NSUserTrackingUsageDescription" permission for iOS builds, to allow advertising identifier usage in iOS 14.5+
@@ -24,7 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Internal: scripts to generate local Android/iOS builds for troubleshooting failed Unity Cloud Builds
 - Internal: Ultimate Editor Enhancer asset to improve Unity workflow
 
-### Changed
+### Changed in 0.5.0
 
 - Procedural dealing logic to generate deals of all ranks with equal probability, while maintaining variability.
   - Deals are generated in the background to keep a consistent frame rate between rounds
@@ -57,12 +57,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Internal: disabled bitcode on iOS, as recommended for Xcode 14+
 - Internal: assembly version of custom assemblies are now always in sync with Unity project version
 
-### Removed
+### Removed in 0.5.0
 
 - "Contact Support" button from About screen (making a bug report or feature request on GitHub is recommended instead)
 - iOS launch screen image
 
-### Fixed
+### Fixed in 0.5.0
 
 - "Loading" text on splash screen to use same font as other UI
 - Low-pass filter not applying to music on the pause menu
@@ -70,7 +70,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.4.0 - 2021-02-18
 
-### Added
+### Added in 0.4.0
 
 - A basic, placeholder tutorial for introducing the Poker ranks and rules specific to High Hand Hold'em. The tutorial will not show again after its been completed, unless player toggles it back on for the next game from the Options menu
 - Appodeal 2.11.2 for ad mediation
@@ -82,7 +82,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New "announcer callout" for longest game
 - iOS launch screen image
 
-### Changed
+### Changed in 0.4.0
 
 - Now running with Unity 2020.1.8f1
 - Banner ad now shows on Pause menu
@@ -98,12 +98,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Changed "announcer callout" for new high score.
 - Game will now fit to the "safe area" of the screen on notched devices like iPhone 11
 
-### Removed
+### Removed in 0.4.0
 
 - Unnecessary analytics events for visiting the Main Menu
 - "Today" and "This Week" stats, as they didn't really add much value for a single player's stats
 
-### Fixed
+### Fixed in 0.4.0
 
 - Checkboxes on the Options screen not being tappable after navigating from the Pause menu
 - Procedural dealing is now better documented and configurable for our level designers
@@ -113,7 +113,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.3.0 - 2020-07-23
 
-### Added
+### Added in 0.3.0
 
 - This CHANGELOG file to summarize what new features and bug fixes are included in each new version
 - Separate sections for Feedback & Issues, Changelog, and Legal Stuff in Support repo README
@@ -141,7 +141,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Hand Ranks screen, where players can get an overview of the different Poker ranks
 - Button to open Hand Ranks screen from pause menu
 
-### Changed
+### Changed in 0.3.0
+
 - Now running with Unity 2019.4.3f1
 - Pause menu adds a low-pass filter to the background music
 - Correct-choice animations feel a bit more "snappy"
@@ -173,12 +174,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Button backgrounds to better match the color theme
 - The patterned background to a "checkerboard" rather than "zig zags"
 
-### Removed
+### Removed in 0.3.0
+
 - Commit SHA from About screen, since it was meaningless to players, and devs can figure out from CI/CD system
 - That bouncy shadow under the circle light behind the "Hold'em" letters
 - That sketchy, "pencily" shader effect from the cards
 
-### Fixed
+### Fixed in 0.3.0
+
 - Hands still being clickable on timeout
 - Cards not being dealt with tiered difficulty (with respect to number of board/hand cards)
 - UI controls on scrollable screens being hard to press
@@ -188,18 +191,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 0.2.0 - 2020-01-15
 
-### Added
+### Added in 0.2.0
+
 - Instertitial ads after every 3rd gameover, because monetization
 - Volume of music, SFX, and announcer audio can now be adjusted with sliders in Options menu
 - Audio values set in Options menu will be persisted between sessions
 - Default 512x512 app icon
 
-### Changed
+### Changed in 0.2.0
+
 - Now running with Unity 2019.2.17f1
 - High score screen can now show up to 10 scrollable tiles
 
 
 ## 0.1.0 - 2019-12-22
 
-### Added
+### Added in 0.1.0
+
 - First version of the game built with a semantic version
