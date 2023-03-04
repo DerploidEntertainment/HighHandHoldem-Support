@@ -1,3 +1,5 @@
+# ♥️ ♣️ _High Hand Hold'em_ Support ♦️ ♠️
+
 ![High Hand Hold'em logo](./images/HHH256.png)
 
 [![Changelog badge (currently 0.5.0)](https://img.shields.io/badge/changelog-v0.5.0-blue.svg)][changelog]
@@ -5,10 +7,9 @@
 [![MIT License Badge](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 [changelog]: ./CHANGELOG.md
+[license]: ./LICENSE
 
-# :hearts: :clubs: _High Hand Hold'em_ Support :diamonds: :spades:
-
-_&copy; 2017-2023 Derploid Entertainment, LLC._
+_© 2017-2023 Derploid® Entertainment, LLC._
 
 Welcome! This repository contains supporting resources for our mobile card game, _High Hand Hold'em_. See sections below for more info.
 
@@ -23,14 +24,10 @@ Thank you for helping us build a better _High Hand Hold'em_! :pray: :hugs:
 
 ## Changelog
 
-All notable changes to _High Hand Hold'em_ are documented in [CHANGELOG.md](./CHANGELOG.md). The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+All notable changes to _High Hand Hold'em_ are documented in [CHANGELOG.md][changelog]. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## Legal Stuff
 
-Your use of _High Hand Hold'em_ is licensed under the following [terms and conditions](https://hhh-legal-docs.s3.us-east-2.amazonaws.com/hhh-terms.html). All files in this repository are licensed under the super-permissive [MIT license](./LICENSE).
+Your use of _High Hand Hold'em_ is licensed under the following [terms and conditions](https://hhh-legal-docs.s3.us-east-2.amazonaws.com/hhh-terms.html). All files in this repository are licensed under the super-permissive [MIT license][license].
 
-[changelog]: ./CHANGELOG.md
-[changelog-badge]: https://img.shields.io/badge/changelog-v0.4.0-blue.svg
-[license]: ./LICENSE
-[version-badge]: https://img.shields.io/badge/version-0.4.0-blue.svg
-[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
+"Derploid" is a registered trademark of Derploid Entertainment, LLC registered in the U.S. Patent and Trademark Office.
