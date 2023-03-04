@@ -2,8 +2,7 @@
 
 All notable changes to _High Hand Hold'em_ are documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## 0.5.0 - 2023-02-13
 
@@ -110,7 +109,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Back button logging errors from Main Menu or during a game
 - Banner ad staying visible when navigating from side menus to Main Menu or from Pause menu back to game
 
-
 ## 0.3.0 - 2020-07-23
 
 ### Added in 0.3.0
@@ -188,7 +186,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Sharp corners in the board area and game area
 - Broken tiling of the patterned background, and made it fit the color scheme better
 
-
 ## 0.2.0 - 2020-01-15
 
 ### Added in 0.2.0
@@ -202,7 +199,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Now running with Unity 2019.2.17f1
 - High score screen can now show up to 10 scrollable tiles
-
 
 ## 0.1.0 - 2019-12-22
 

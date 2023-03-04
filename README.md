@@ -23,7 +23,7 @@ Thank you for helping us build a better _High Hand Hold'em_! :pray: :hugs:
 
 ## Changelog
 
-All notable changes to _High Hand Hold'em_ are documented in [CHANGELOG.md](./CHANGELOG.md). The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+All notable changes to _High Hand Hold'em_ are documented in [CHANGELOG.md](./CHANGELOG.md). The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## Legal Stuff
 
