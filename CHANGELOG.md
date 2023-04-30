@@ -4,6 +4,64 @@ All notable changes to _High Hand Hold'em™_ are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## 0.6.0 - TBD
+
+### Added in 0.6.0
+
+- Confirmation dialog before resetting stats
+- ® symbol after "Derploid" in relevant places (in-game, support repo, Derploid website, etc.), now that we've registered that trademark with the USPTO
+- ™ symbol after "High Hand Hold'em" in relevant places (in-game, support repo, Derploid website, etc.), now that we're trying to register that trademark with the USPTO
+- Unity Authentication anonymous signin to generate player IDs (can be used to distiniguish statistics for different players on same device in the future, and better correlate our ads/analytics events)
+- "Hand indicator lights" underneath the correct hand (particularly useful when choosing wrong but the correct hand's optimal cards are all on the board, making it unclear which hand was actualy correct)
+- Effects to accentuate the kicker card of the winning hand
+  - A little "shake" animation and audio clip
+  - Scorebox will show the value of the kicker (e.g., "Ace kicker") during these effects
+  - If a kicker is involved in a round that the player gets wrong, then the scorebox will cycle between rank name and kicker
+- Armv9 security features
+- Internal: analytics after options are saved on the Options Menu
+- Internal: add some missing unit tests for dealing logic
+- Internal: add some test deals for testing out kicker effects
+
+### Changed in 0.6.0
+
+- Buttons now vertically centered on Main Menu and Pause Menu
+- Wrong-continue button now positioned above the first two hands, rather than directly overtop of them
+- Countdown timer now positioned above the first two hands, rather than directly overtop of them
+- Timing of "correct card" effects and subsequent pause to feel more consistent
+- Re-enabled Unity's default "Auto Graphics API" setting, allowing the engine to choose the appropriate graphics API at runtime for the best results
+- Simplified the "bootstrapping" steps during the loading screen to improve loading time
+- Hands now farther apart to make them clearly distinct
+- Rebalance levels of some SFX sounds
+- Board cards are now on their own UI canvas to slightly improve rendering speed
+- Points-earned text color now fits the game's color scheme better than the old bright green
+- "Postitive" match-end announcer callouts (e.g., "Good job!") will only play if player reached a score of 75+ (~3 rounds), to prevent "sarcastic" callouts
+- Replaced the discrete "timer lights" with a continuous "timer bar" where the gold divider was previously
+- Minimum supported iOS version is now 13.0, to match Unity's iOS version support
+- Ad network frameworks referenced by Appodeal are no longer linked statically, which should make startup a little slower but slightly reduce build size
+- Internal: showing/hiding of board cards and hands is now more flexible (helps with internal testing)
+- Internal: background poker deal tasks are now canceled more elegantly when the game is closed
+- Internal: Replace all use of UnityEngine.Assertions with exceptions
+- Internal: update to Appodeal 3.0.2 for ad mediation
+- Internal: improve the correlation of ad impression analytics events with actual ads being shown
+- Internal: migrate to structed logging (with Serilog) for ad- and analytics-related log messages
+- Internal: reduce duplication of company name and product name strings around the codebase (mostly now drawing from the Unity project settings)
+- Internal: update target Android API Level to 33
+- Internal: updated Unity version to 2022.2 (with Gradle 7.2)
+
+### Removed in 0.6.0
+
+- Longest match effects, both during a match and on the gameover screen. Due to the "monotonically" increasing number of board cards and hands introduced in v0.5.0, longest match and high score would always happen at the same time, which just seemed distracting and redundant.
+- Disabled support for HTTP downloads, which makes the game slightly more secure
+- Unnecessary Appodeal service dependencies (Adjust, Appsflyer, Meta, and Firebase)
+
+### Fixed in 0.6.0
+
+- Layout of consent UI on Options screen
+- Countdown timer feeling rushed at the end
+- Game hanging when playing again after tapping the wrong-continue button before correct card "pops" had finished
+- Internal: logical errors when using internal "random cards" and "absolute" poker deal generators, and related tests
+- Internal: latent bugs in the "poker deal generation" logic used for testing
+
 ## 0.5.0 - 2023-02-13
 
 ### Added in 0.5.0
