@@ -17,7 +17,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - A little "shake" animation and audio clip
   - Scorebox will show the value of the kicker (e.g., "Ace kicker") during these effects
   - If a kicker is involved in a round that the player gets wrong, then the scorebox will cycle between rank name and kicker
-- Armv9 security features
 - Internal: analytics after options are saved on the Options Menu
 - Internal: add some missing unit tests for dealing logic
 - Internal: add some test deals for testing out kicker effects
@@ -51,7 +50,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Removed in 0.6.0
 
 - Longest match effects, both during a match and on the gameover screen. Due to the "monotonically" increasing number of board cards and hands introduced in v0.5.0, longest match and high score would always happen at the same time, which just seemed distracting and redundant.
-- Disabled support for HTTP downloads, which makes the game slightly more secure
 - Unnecessary Appodeal service dependencies (Adjust, Appsflyer, Meta, and Firebase)
 
 ### Fixed in 0.6.0
@@ -61,6 +59,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Game hanging when playing again after tapping the wrong-continue button before correct card "pops" had finished
 - Internal: logical errors when using internal "random cards" and "absolute" poker deal generators, and related tests
 - Internal: latent bugs in the "poker deal generation" logic used for testing
+
+### Security in 0.6.0
+
+- Added Armv9 security features
+- Disabled support for insecure HTTP downloads
 
 ## 0.5.0 - 2023-02-13
 
