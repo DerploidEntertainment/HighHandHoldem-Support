@@ -9,7 +9,7 @@
 [changelog]: ./CHANGELOG.md
 [license]: ./LICENSE
 
-_© 2017-2024 Derploid® Entertainment, LLC._
+_© 2017-2025 Derploid® Entertainment, LLC._
 
 Welcome! This repository contains supporting resources for our mobile card game, _High Hand Hold'em™_. See sections below for more info.
 
