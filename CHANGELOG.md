@@ -63,7 +63,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Security in 0.6.0
 
 - Added Armv9 security features
-- Disabled support for insecure HTTP downloads
 
 ## 0.5.0 - 2023-02-13
 
