@@ -11,22 +11,28 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Confirmation dialog before resetting stats
 - ® symbol after "Derploid" in relevant places (in-game, support repo, Derploid website, etc.), now that we've registered that trademark with the USPTO
 - ™ symbol after "High Hand Hold'em" in relevant places (in-game, support repo, Derploid website, etc.), now that we're trying to register that trademark with the USPTO
-- Unity Authentication anonymous signin to generate player IDs (can be used to distiniguish statistics for different players on same device in the future, and better correlate our ads/analytics events)
+- Unity Authentication anonymous signin to generate player IDs (can be used to distiniguish statistics for different players on same device in the future)
 - "Hand indicator lights" underneath the correct hand (particularly useful when choosing wrong but the correct hand's optimal cards are all on the board, making it unclear which hand was actualy correct)
 - Effects to accentuate the kicker card of the winning hand
   - A little "shake" animation and audio clip
   - Scorebox will show the value of the kicker (e.g., "Ace kicker") during these effects
   - If a kicker is involved in a round that the player gets wrong, then the scorebox will cycle between rank name and kicker
+- AD_ID permissions for Android 13+
 - Internal: analytics after options are saved on the Options Menu
-- Internal: add some missing unit tests for dealing logic
-- Internal: add some test deals for testing out kicker effects
+- Internal: automated tests for dealing logic
+- Internal: automated tests for scorekeeping logic
+- Internal: some test deals for testing out kicker effects
+- Internal: a `CONTRIBUTING.md` file to help future devs onboard
+- Internal: logging of configuration objects for troubleshooting, with some objects optionally set as "secret" so that they're properties aren't exposed in logs
+- Internal: improve how app "environment" (Development vs Production) is set/read during builds and at runtime
+- Internal: `Microsoft.Unity.Analyzers` package for improved Unity-specific compile-time warnings/messages
 
 ### Changed in 0.6.0
 
 - Buttons now vertically centered on Main Menu and Pause Menu
 - Wrong-continue button now positioned above the first two hands, rather than directly overtop of them
 - Countdown timer now positioned above the first two hands, rather than directly overtop of them
-- Timing of "correct card" effects and subsequent pause to feel more consistent
+- Timing of "correct card" effects and subsequent pause now feel more consistent
 - Re-enabled Unity's default "Auto Graphics API" setting, allowing the engine to choose the appropriate graphics API at runtime for the best results
 - Simplified the "bootstrapping" steps during the loading screen to improve loading time
 - Hands now farther apart to make them clearly distinct
@@ -36,25 +42,45 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - "Postitive" match-end announcer callouts (e.g., "Good job!") will only play if player reached a score of 75+ (~3 rounds), to prevent "sarcastic" callouts
 - Replaced the discrete "timer lights" with a continuous "timer bar" where the gold divider was previously
 - Minimum supported iOS version is now 13.0, to match Unity's iOS version support
-- Ad network frameworks referenced by Appodeal are no longer linked statically, which should make startup a little slower but slightly reduce build size
+- Ad network frameworks referenced by Appodeal are no longer linked statically, which should slightly reduce build size
+- Rounds get faster now, after all board cards and hands have been revealed
+- Adjust points earned by current number of board cards/hands
+- Bug Report and Feature Request buttons on the About menu now have specific GitHub URLs
+- Improved transpareny & consent flows
+  - First Time User Experience (FTUE):
+    - The custom dialog now requests explicit consent to use Unity Analytics and accept the Privacy Policy and Terms of Use
+    - An IAM TCF-compatible consent form (provided by Google UMP) is now shown (for all users, not just those protected by the GDPR)
+  - Options menu has been fleshed out with a "Data Privacy" section with the following controls:
+    - Checkbox for toggling analyics consent
+    - Buttons for requesting access to or deletion of private analytics data
+    - Button for resetting ad consent to reshow the CMP consent form on next game launch
+    - Privacy Policy and Terms of Use buttons moved here from About Menu
+- Internal: migrate off of deprecated Unity Analytics `IAnalyticsService.AdImpression()` method calls to `.RecordEvent()`
 - Internal: showing/hiding of board cards and hands is now more flexible (helps with internal testing)
 - Internal: background poker deal tasks are now canceled more elegantly when the game is closed
-- Internal: Replace all use of UnityEngine.Assertions with exceptions
-- Internal: update to Appodeal 3.0.2 for ad mediation
-- Internal: improve the correlation of ad impression analytics events with actual ads being shown
-- Internal: migrate to structed logging (with Serilog) for ad- and analytics-related log messages
-- Internal: reduce duplication of company name and product name strings around the codebase (mostly now drawing from the Unity project settings)
-- Internal: update target Android API Level to 33
-- Internal: updated Unity version to 2022.2 (with Gradle 7.2)
+- Internal: Replace all use of `UnityEngine.Assertions` with exceptions
+- Internal: configuration is now handled by the `Microsoft.Extensions.Configuration.*` libraries, making the whole system much more extensible
+  - Also use the onfiguration-binding source generator to improve config binding performance
+- Internal: logging is now fully handled by the `Microsoft.Extensions.Logging.*` libraries, which should make logs much more extensible/performant
+  - Also migrate to structured logging (with Serilog) for ad- and analytics-related log messages
+- Internal: reorganize Edit/Play Mode tests into managed plugins, so we can use the same compilers/analyzers for _all_ code
+- Internal: the log messages in our code (and our `UnityUtil` dependency) now use `LoggerMessage(Attribute)` for high-performance logging
+- Internal: fully migrate to the newer Unity Input System to avoid Android build warnings
+- Internal: update unit test projects for card dealing logic to .NET 8
+- Internal: update to Appodeal 3.7.0 for ad mediation
+- Internal: update target Android API Level to 35 (with Gradle 8.2.2)
+- Internal: update Odin Inspector asset to 3.3.1.13
+- Internal: update Unity version to 6000.0.30f1
+- Internal: update Google's External Dependency Manager to 1.2.185
 
 ### Removed in 0.6.0
 
 - Longest match effects, both during a match and on the gameover screen. Due to the "monotonically" increasing number of board cards and hands introduced in v0.5.0, longest match and high score would always happen at the same time, which just seemed distracting and redundant.
 - Unnecessary Appodeal service dependencies (Adjust, Appsflyer, Meta, and Firebase)
+- Location usage for ads on iOS, to match the privacy experience on Android
 
 ### Fixed in 0.6.0
 
-- Layout of consent UI on Options screen
 - Countdown timer feeling rushed at the end
 - Game hanging when playing again after tapping the wrong-continue button before correct card "pops" had finished
 - Internal: logical errors when using internal "random cards" and "absolute" poker deal generators, and related tests
@@ -62,7 +88,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Security in 0.6.0
 
-- Added Armv9 security features
+- Added Armv9 security features on Android
+
+### Known Issues in 0.6.0
+
+- Back navigation with swipe on Android no longer works
 
 ## 0.5.0 - 2023-02-13
 
@@ -73,7 +103,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Support for x86 x86-64 ChromeOS devices (untested though)
 - Sounds for when cards flip and slide on the gameboard
 - Button on Statistics screen for resetting stats
-- New website for Derploid and _High Hand Hold'em_ at www.derploid.com! Hosted on GitHub Pages, with domains registered and DNS configured through AWS Route53.
+- New website for Derploid and _High Hand Hold'em_ at <www.derploid.com>! Hosted on GitHub Pages, with domains registered and DNS configured through AWS Route53.
 - Sign-up form for Derploid mailing list to the new website, powered by Sendinblue.
 - Consent opt-out buttons for ads and analytics, to make the game compliant with GDPR and other privacy regulations
 - Warning about lost progress to confirm-quit text in Pause menu
@@ -81,7 +111,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Internal: .NET Analyzers for better static analysis of code
 - Internal: script to generate thousands of deals with random inputs to test out the new procedural dealing logic
 - Internal: scripts to generate local Android/iOS builds for troubleshooting failed Unity Cloud Builds
-- Internal: Ultimate Editor Enhancer asset to improve Unity workflow
+- Internal: Ultimate Editor Enhancer (UEE) asset to improve Unity workflow
 
 ### Changed in 0.5.0
 
