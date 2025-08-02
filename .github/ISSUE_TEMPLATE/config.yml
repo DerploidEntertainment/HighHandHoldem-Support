@@ -1,5 +1,7 @@
+# See syntax at https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+
 blank_issues_enabled: false
 contact_links:
   - name: General support
     url: 'mailto:hhh-support@derploid.com'
-    about: Use this email for general support questions, or to include personally identifiable information (like name or phone number) in your question.
+    about: Use this email for general support questions, or to include personally identifiable information (like your name or email) in your question.

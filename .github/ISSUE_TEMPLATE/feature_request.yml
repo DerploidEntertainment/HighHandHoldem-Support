@@ -1,34 +1,63 @@
+# See syntax at https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
+# When updating/renaming this file, also update the `GitHubFeedbackManager` class in the main repo.
+
 name: 💡 Feature request
 description: Suggest an idea for the game
 title: 'Add <feature>'
-labels: [ enhancement ]
+type: Feature
+labels: []
 assignees: []
 body:
-  - id: is-problem
-    type: textarea
-    validations:
-      required: true
+  - type: markdown
     attributes:
-      label: Is your feature request related to a problem?
-      description: A clear and concise description of what the problem is, or "No".
-      placeholder: I'm always frustrated when ...
-
-  - id: problem-solution
-    type: textarea
-    attributes:
-      label: If so, describe the solution you'd like
-      description: A clear and concise description of what you want to happen, and any alternative solutions or features you've considered.
+      value: |
+        > [!IMPORTANT]
+        > Please search through our existing [feature list](https://github.com/DerploidEntertainment/HighHandHoldem-Support/issues?q=is%3Aissue%20%20type%3AFeature) to see if someone else has already brought up your idea.
+        > If so, please just like that request, rather than opening a new one. 🙏
 
   - id: description
     type: textarea
     validations:
       required: true
     attributes:
-      label: What would you like us to add?
-      description: A clear and concise description of what you'd like to see added to the game, or "N/A" if you already filled out the above fields.
+      label: Describe the feature or solution
+      description: >
+        A clear and concise description of what you would like added to the game, or of a proposed solution to a problem.
+        Please provide all necessary context or screenshots to help us understand your idea.
+      placeholder: "**Do not enter your name, email, phone, or any other personally identifiable information!**"
 
-  - id: notes
-    type: textarea
+  - id: game-version
+    type: input
+    validations:
+      required: true
     attributes:
-      label: Additional context
-      description: Any other context or screenshots about the feature request.
+      label: Game version
+      description: Version of the game running on your device (found on the About screen).
+      placeholder: "'1.1.0 (#123)' or 'Unknown'"
+
+  - id: device-os
+    type: input
+    validations:
+      required: true
+    attributes:
+      label: Device operating system
+      description: Find in device settings (usually under "General" or "About").
+      placeholder: "'iOS 18.1' or 'Android 13' or 'Unknown'"
+
+  - id: device-model
+    type: input
+    validations:
+      required: true
+    attributes:
+      label: Device model
+      description: Find in device settings (usually under "General" or "About").
+      placeholder: "'iPhone6.1' or 'SAMSUNG-SM-G900A' or 'Unknown'"
+
+  - id: graphics-device-version
+    type: input
+    validations:
+      required: false
+    attributes:
+      label: Graphics device version
+      description: Find in device settings
+      placeholder: OpenGL 2.0

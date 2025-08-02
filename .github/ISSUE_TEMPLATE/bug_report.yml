@@ -1,50 +1,62 @@
-name: 🐛 Bug report
+# See syntax at https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
+# When updating/renaming this file, also update the `GitHubFeedbackManager` class in the main repo.
+
+name: 🐞 Bug report
 description: File a bug report to improve the game
 title: '<Brief bug description>'
-labels: [ bug ]
+type: Bug
+labels: []
 assignees: []
 body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!IMPORTANT]
+        > Please search through our existing [bugs](https://github.com/DerploidEntertainment/HighHandHoldem-Support/issues?q=is%3Aissue%20%20type%3ABug) to see if someone else has already reported this bug.
+        > If so, please just like that Issue, rather than opening a new one. 🙏
+
   - id: description
     type: textarea
     validations:
       required: true
     attributes:
-      label: Describe the bug
-      description: A clear and concise description of the bug that occurred.
-
-  - id: repro-steps
-    type: textarea
-    validations:
-      required: true
-    attributes:
-      label: Steps to reproduce
+      label: Description
       placeholder: |
+        **Do not enter your name, email, phone, or any other personally identifiable information!**
+
+        ## Steps to reproduce
+
         1. Go to screen '...'
         2. Start a match
         3. Press hand '....'
         4. See error
 
-  - id: expected-behavior
-    type: textarea
+        ## Expected behavior
+        Clear and concise description of what you _expected_ to happen.
+
+        ## Actual behavior
+        Clear and concise description of what _actually_ happened.
+
+        ## Additional information
+        Any other context about the problem, including screenshots.
+
+  - id: game-version
+    type: input
     validations:
       required: true
     attributes:
-      label: Expected behavior
-      description: A clear and concise description of what you _expected_ to happen.
+      label: Game version
+      description: Version of the game running on your device (found on the About screen).
+      placeholder: "'1.1.0 (#123)' or 'Unknown'"
 
-  - id: actual-behavior
-    type: textarea
+  - id: device-os
+    type: input
     validations:
       required: true
     attributes:
-      label: Actual behavior
-      description: A clear and concise description of what _actually_ happened.
-
-  - id: screenshots
-    type: textarea
-    attributes:
-      label: Screenshots
-      description: If applicable, add screenshots to help explain your problem.
+      label: Device operating system
+      description: Find in device settings (usually under "General" or "About").
+      placeholder: "'iOS 18.1' or 'Android 13' or 'Unknown'"
 
   - id: device-model
     type: input
@@ -52,25 +64,14 @@ body:
       required: true
     attributes:
       label: Device model
-      placeholder: iPhone6
+      description: Find in device settings (usually under "General" or "About").
+      placeholder: "'iPhone6.1' or 'SAMSUNG-SM-G900A' or 'Unknown'"
 
-  - id: device-os
+  - id: graphics-device-version
     type: input
     validations:
-      required: true
+      required: false
     attributes:
-      label: Device operating system (OS)
-      placeholder: iOS8.1
-
-  - id: game-version
-    type: input
-    attributes:
-      label: Game version
-      description: Version of the game running on your device (found on the About screen).
-      placeholder: 1.1.0 (#23)
-
-  - id: notes
-    type: textarea
-    attributes:
-      label: Additional context
-      description: Any other context about the problem.
+      label: Graphics device version
+      description: Find in device settings
+      placeholder: OpenGL 2.0
