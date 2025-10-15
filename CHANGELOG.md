@@ -4,6 +4,36 @@ All notable changes to _High Hand Hold'em™_ are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 0.7.0 - TBD
+
+### Added in 0.7.0
+
+- Graceful failure UX if bootstrapping the game fails, with buttons to report a bug or quit
+- Add a button for ads RER that basically just goes to the HHH section of our website, which has instructions for requesting deletion of ads data
+- Internal: add a version field to our statistics file schema to make loading those files more future-proof
+
+### Changed in 0.7.0
+
+- The Feature Request and Report Bug buttons now auto-populate game/system-related fields on the feedback forms
+- Stats-related code now makes better use of async/await for improved UI responsiveness
+- Improve the match-end interstitial ad to strike the proper balance between giving the ad time to load, not letting it expire before showing, and not overly disrupting gameplay. In short, it is now shown after timeout effects or when the OK button is tapped after a wrong choice, but _not_ when quitting from the Pause menu.
+- Both RER button labels end with "..." to show that they open other pages
+- Internal: added buttons to test additional crash scenarios, and moved them to a separate side menu
+- Internal: build scripts now ensure that all environments are built with the most complete debug symbols possible
+- Internal: update to Appodeal 3.10.0 for ad mediation
+- Internal: update target Android API Level to 35 (with Gradle 8.2.2)
+- Internal: update Unity version to 6000.0.58f2
+- Internal: update Google's External Dependency Manager to 1.2.186
+- Internal: update Ultimate Editor Enhancer asset to 4.5.1.1
+
+### Fixed in 0.7.0
+
+- Correct description wording for analytics right-to-erasure button on Options screen
+
+### Security in 0.7.0
+
+- Update Unity to 6000.0.58f2 to get their CVE-2025-59489 patch
+
 ## 0.6.0 - 2025-07-23
 
 ### Added in 0.6.0
