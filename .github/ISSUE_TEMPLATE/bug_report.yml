@@ -21,8 +21,10 @@ body:
       required: true
     attributes:
       label: Description
-      placeholder: |
-        **Do not enter your name, email, phone, or any other personally identifiable information!**
+      value: |
+        <!--
+        WARNING! Do not enter your name, email, phone, or any other personally identifiable information!
+        -->
 
         ## Steps to reproduce
 

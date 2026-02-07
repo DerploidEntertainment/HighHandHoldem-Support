@@ -24,7 +24,7 @@ body:
       description: >
         A clear and concise description of what you would like added to the game, or of a proposed solution to a problem.
         Please provide all necessary context or screenshots to help us understand your idea.
-      placeholder: "**Do not enter your name, email, phone, or any other personally identifiable information!**"
+      placeholder: "Do not enter your name, email, phone, or any other personally identifiable information!"
 
   - id: game-version
     type: input

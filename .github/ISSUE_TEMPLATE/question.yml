@@ -24,10 +24,7 @@ body:
       description: >
         A clear and concise question about some specific aspect of gameplay, a non-gameplay screen, or anything else.
         Please provide all necessary context or screenshots to help us understand your question.
-      placeholder: |
-        **Do not enter your name, email, phone, or any other personally identifiable information!**
-
-        E.g., "How do I select a hand?"
+      placeholder: "Do not enter your name, email, phone, or any other personally identifiable information!"
 
   - id: game-version
     type: input
