@@ -23,7 +23,7 @@ Thank you for helping us build a better _High Hand Hold'em™_! 🙏 🤜🤛
 
 _High Hand Hold'em_ can be played completely anonymously.
 However, our service partners do collect some personal data from your device for the purposes of diagnostics, analytics, and advertising.
-See our [privacy policy](https://hhh-legal-docs.s3.us-east-2.amazonaws.com/hhh-privacy.html) for full details.
+See our [privacy policy](https://www.derploid.com/legal/hhh-privacy-policy) for full details.
 
 If you wish to request access to or deletion of any of your personal data, please take the following steps:
 
@@ -43,6 +43,6 @@ All notable changes to _High Hand Hold'em™_ are documented in [CHANGELOG.md](.
 
 ## Legal Stuff
 
-Your use of _High Hand Hold'em™_ is licensed under the following [terms and conditions](https://hhh-legal-docs.s3.us-east-2.amazonaws.com/hhh-terms.html). All files in this repository are licensed under the super-permissive [MIT license](./LICENSE).
+Your use of _High Hand Hold'em™_ is licensed under the following [terms and conditions](https://www.derploid.com/legal/hhh-terms-of-use). All files in this repository are licensed under the super-permissive [MIT license](./LICENSE).
 
 "Derploid" is a registered trademark of Derploid Entertainment, LLC registered in the U.S. Patent and Trademark Office.
