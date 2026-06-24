@@ -4,6 +4,68 @@ All notable changes to _High Hand Hold'em™_ are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 0.8.0 - TBD
+
+### Added in 0.8.0
+
+- Integrate Unity's Digital Services Act (DSA) Notifications API, allowing us to show if/why actions have been taken against a user on startup (in the _very_ unlikely case that any have been)
+- An "Audio" header above the volume sliders on the Options Menu
+- An official phone number to our website and Google Play developer details! It basically just directs users to our support repo
+- Internal: enable GitHub Dependabot version updates to regularly update (most of) our NuGet dependencies
+- Internal: add a GitHub Actions workflow to test our card dealing logic after every source commit
+- Internal: add the Unity Essentials Kit asset v3.7.4 (for using its Native UI and Leaderboard features in future releases!)
+
+### Changed in 0.8.0
+
+- Finalize the tutorial!
+  - It now just covers the unique mechanics of this game, rather than trying to teach all of the details of Poker ranks/terminology (this "reference" material has been moved to the Hand Ranks screen instead)
+  - The "steps" of the tutorial have as few words as possible, with animations/effects to keep things visually interesting
+  - Because the tutorial is much simpler, there is no option to skip it, and there's no need for an option to show it again
+- Overhaul Hand Ranks screen
+  - Show an initial "Note" section explaining Poker ranks in general
+  - Ranks now have brief explanations
+  - Rank examples can be navigated manually, and the "indicators" are more understandable
+- Min supported iOS version is now 15.0
+- Min supported Android versions is now 25
+- Combine some data privacy buttons into a single one that links to instructions for data subject requests in the Support repo
+- Clarify that high scores are lost when quitting
+- Sign-in now only delays after the first retry
+- Add "Privacy Policy" and "Terms of Use" buttons on the About screen, replacing the Terms button on the Options Menu (a Privacy Policy button is still there in the Data Privacy section though)
+- The "OK" button after a wrong choice now shows after all of the correct card and kicker effects
+- Tutorial music is now streamed, resulting in ~37 MB less memory usage
+- Add texture compression targeting on Android, significantly reducing memory usage on ASTC- and ETC2-supporting devices (>80% and >95% of Android devices, resp., according to Google Play), with >56 MB less memory usage seen on ASTC-supporting devices
+- Finalize formatting/content of credits
+- Support playing the game completely offline (i.e., handle anonymous signin failures when offline)
+  - If initial anonymous sign-in fails, show a warning so that users know their stats may not be saved
+  - Retry anonymous sign-in every 30s in the background until it works (in case of temporary network outages)
+  - Adjust stats file loading/saving in the face of signin failures
+  - Keep stats in-memory and reassociate them with the active player once signin succeeds so that those stats are not lost while game is still running
+- The fourth board card now appears after only 3 rounds so that players see how difficulty scales more quickly
+- Use more legible sans-serif font on non-CMP consent form
+- Remove those distracting "scroll arrows" from scrollable screens
+- Internal: Use environment-specific legal document URLs for testing the UX when legal docs are updated
+- Internal: now building for iOS with XCode 26.2.0
+- Internal: update to Appodeal 4.2.0 for ad mediation
+- Internal: update target Android API Level to 36 (with Gradle 8.13)
+- Internal: update Unity version to 6000.3.5f2
+- Internal: update Google's External Dependency Manager to 1.2.187
+- Internal: update Ultimate Editor Enhancer asset to 4.6.1.1
+- Internal: update Odin Inspector asset to 4.0.2.0
+- Internal: update unit test projects for card dealing logic to .NET 10
+- Internal: update to Unity Analytics 6.3.0 for improved consent management and type-safe custom events
+
+### Removed in 0.8.0
+
+- Support for Android x86-64 (Magic Leap 2) devices
+- Internal: disable unnecessary Unity engine features like light halos, lens flares, Addressables, and occlusion culling
+
+### Fixed in 0.8.0
+
+- TwoPair "pop" effects now go from lowest to highest cards like the other ranks
+- Fix height of toggle labels so the whole labels can be tapped
+- Remove email and location tracking from our Apple privacy manifest. While our ad mediation partner does collect location data, we have never collected emails and never used either data for tracking users
+- Internal: fix display of non-alphanumeric characters (e.g., `®`) in all assembly metadata
+
 ## 0.7.0 - 2025-10-17
 
 ### Added in 0.7.0
