@@ -44,7 +44,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Use more legible sans-serif font on non-CMP consent form
 - Remove those distracting "scroll arrows" from scrollable screens
 - Internal: Use environment-specific legal document URLs for testing the UX when legal docs are updated
-- Internal: now building for iOS with XCode 26.2.0
+- Internal: now building for iOS with XCode 26.0.1
 - Internal: update to Appodeal 4.2.0 for ad mediation
 - Internal: update target Android API Level to 36 (with Gradle 8.13)
 - Internal: update Unity version to 6000.3.5f2
