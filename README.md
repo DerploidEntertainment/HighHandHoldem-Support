@@ -2,7 +2,7 @@
 
 ![High Hand Hold'em logo](./images/HHH256.png)
 
-[![Version badge (currently 0.7.0)](https://img.shields.io/badge/version-0.7.0-blue.svg)](./CHANGELOG.md)
+[![Version badge (currently 0.8.0)](https://img.shields.io/badge/version-0.8.0-blue.svg)](./CHANGELOG.md)
 [![MIT License Badge](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 _© 2017-2026 Derploid® Entertainment, LLC._
