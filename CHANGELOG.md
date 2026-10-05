@@ -4,6 +4,72 @@ All notable changes to _High Hand Hold'em™_ are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 1.0.0 - TBD
+
+### Added in 1.0.0
+
+- New "Remove Ads" section in Options Menu
+  - Buttons for paying to remove "forced" ads (banner/interstitial ads) and/or rewarded ads,
+  - Usual button to "restore" purchases for iOS users
+  - Any errors are reported in native dialogs
+  - A "Reconnect" button in case the mobile store becomes disconnected
+- Global leaderboard!
+  - Technically, one leaderboard for Google Play Games users, and one for Apple Games Center users (typical of mobile games)
+  - Add a Leaderboard button on the Main Menu and Match Over screen, which users can tap to view even when not signed in
+  - Add a button on the Options menu for signing in on Android (iOS devices require signing in through device settings)
+  - Automatically submit scores on the match over screen, with native dialogs for any errors that occur and buttons to retry authentication or resubmit scores that failed
+- "Authentication" section to the Options menu, so users can view their anonymous Unity Authentication and gaming services platform user IDs, e.g., for support requests
+- Warning at top of Stats screen that stats are only saved locally and lost upon uninstall
+- Support for Android devices with 16kB memory page sizes
+- Text in continue dialog explaining when it's offered
+- "Ad clacker" icon on the poker chip button to continue with a rewarded ad
+- All 5 cards of the chosen "made hand" are now highlighted when correct, not just the cards that make up its optimal rank
+
+### Changed in 1.0.0
+
+- Correct cards are now shown after a timeout, in case players want to see what they missed
+- Stats JSON files are now associated with the current _platform_ user's ID (Google Play Games or Apple Game Center) rather than their anonymous Unity Authentication user ID, which is probably what most users will expect. Any stats not associated with a player become associated with the new user on sign in, or the old user on sign out.
+- Finalize credits on the About screen
+- Accentuate the tie-breaking card when the best two hands are both flushes
+- Finalize the in-match and match-over images for a new high score
+- Make label casing more consistent throughout the game
+- Finalize poker chip button icons/colors through the game
+- All numbers on the Match Over and Stats screens now have thousands separators
+- "Points earned" text now uses the same font as headings and other prominent text
+- Countdown numbers now use the same font as headings and other prominent text
+- Scrollable side menus now fill the space where the old scrollbars used to be
+- Correct cards now "bounce" vertically rather than scaling, and all correct-card effects now have faster and more uniform duration
+  - This also means that Straight, Flush, and Straight Flush animations are now all the same
+- All copyright statements now just use the year 2026, since that's the year we are publishing!
+- Finalize border-light and hold'em sign light animations; they are now more dynamic as the user moves between screens and match states
+- Stats menu now mentions verifying that users are signed if there were loading errors
+- Return support for "back" swipe input (only on Android)
+- Shrink timer bar and "Hold'em sign" letters for more visually pleasing layout
+- Tweak font of the "High Hand" tube light
+- Shrink the "Hold'em" letters and timer bar
+- The on/off images of the "O" in the "Hold'em" sign are now more distinct
+- Timeout stopwatch image is now more consistent with the game's look and feel
+- All rounds are now a little bit faster, but they decrease to the fastest possible duration over more rounds
+- The points-earned text now uses the same font as other prominent text in the game, and drifts upward rather than downward
+- Internal: Update to Appodeal 4.3.0 for ad mediation
+- Internal: Update Ultimate Editor Enhancer asset to 4.10.0.1
+- Internal: Add analytics events for uncaught exceptions, so we can be more proactive in catching/fixing bugs
+- Internal: Add analytics events for the new logic related to in-app purchasing (for removing ads), platform authentication, and leaderboards
+- Internal: Fix "match end" analytics events being sent on every continue (and add a `continueCount` parameter to that event)
+- Internal: Sender analytics event for banner ad impressions every time the banner refreshes
+
+### Removed in 1.0.0
+
+- Android round icons. Users on Android 7 and below will now just get the flat legacy icon, while Android 8+ users will get an adaptive icon
+- iOS calendar usage description. This was always a really creepy thing to request just for ads...
+- The two-line "circle" behind the Hold'em sign
+- Black background behind board cards
+- Indicator light under the chosen hand (felt superfluous now that we highlight all 5 chosen cards)
+
+### Fixed in 1.0.0
+
+- That misplaced "bulb" in the Hold'em sign apostrophe
+
 ## 0.8.0 - 2026-06-28
 
 ### Added in 0.8.0
