@@ -4,7 +4,7 @@ All notable changes to _High Hand Hold'em™_ are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-## 1.0.0 - TBD
+## [1.0.0] - TBD
 
 ### Added in 1.0.0
 
@@ -70,7 +70,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - That misplaced "bulb" in the Hold'em sign apostrophe
 
-## 0.8.0 - 2026-06-28
+## [0.8.0] - 2026-06-28
 
 ### Added in 0.8.0
 
@@ -132,7 +132,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Remove email and location tracking from our Apple privacy manifest. While our ad mediation partner does collect location data, we have never collected emails and never used either data for tracking users
 - Internal: fix display of non-alphanumeric characters (e.g., `®`) in all assembly metadata
 
-## 0.7.0 - 2025-10-17
+## [0.7.0] - 2025-10-17
 
 ### Added in 0.7.0
 
@@ -162,7 +162,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Update Unity to 6000.0.58f2 to get their CVE-2025-59489 patch
 
-## 0.6.0 - 2025-07-23
+## [0.6.0] - 2025-07-23
 
 ### Added in 0.6.0
 
@@ -252,7 +252,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Back navigation with swipe on Android no longer works
 
-## 0.5.0 - 2023-02-13
+## [0.5.0] - 2023-02-13
 
 ### Added in 0.5.0
 
@@ -315,7 +315,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Low-pass filter not applying to music on the pause menu
 - Value formatting on Statistics screen to always include leading zeroes for decimals, and use integer values for scores and numbers of rounds
 
-## 0.4.0 - 2021-02-18
+## [0.4.0] - 2021-02-18
 
 ### Added in 0.4.0
 
@@ -357,7 +357,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Back button logging errors from Main Menu or during a game
 - Banner ad staying visible when navigating from side menus to Main Menu or from Pause menu back to game
 
-## 0.3.0 - 2020-07-23
+## [0.3.0] - 2020-07-23
 
 ### Added in 0.3.0
 
@@ -434,7 +434,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Sharp corners in the board area and game area
 - Broken tiling of the patterned background, and made it fit the color scheme better
 
-## 0.2.0 - 2020-01-15
+## [0.2.0] - 2020-01-15
 
 ### Added in 0.2.0
 
@@ -448,7 +448,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Now running with Unity 2019.2.17f1
 - High score screen can now show up to 10 scrollable tiles
 
-## 0.1.0 - 2019-12-22
+## [0.1.0] - 2019-12-22
 
 ### Added in 0.1.0
 
