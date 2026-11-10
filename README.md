@@ -1,9 +1,12 @@
+[![Version badge (currently 1.0.0)](https://img.shields.io/badge/version-1.0.0-blue.svg)](./CHANGELOG.md)
+[![MIT License Badge](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+
 # ♥️ ♣️ _High Hand Hold'em™_ Support ♦️ ♠️
 
 ![High Hand Hold'em screen recording](./images/readme-screen-recording.gif)
 
-[![Version badge (currently 1.0.0)](https://img.shields.io/badge/version-1.0.0-blue.svg)](./CHANGELOG.md)
-[![MIT License Badge](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![Get it on Google Play](./images/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.derploid.highhandholdem)
+[![Download on the App Store](./images/app-store-badge.png)](https://apps.apple.com/us/app/high-hand-holdem/id1458188401)
 
 _© 2026 Derploid Entertainment, LLC._
 
